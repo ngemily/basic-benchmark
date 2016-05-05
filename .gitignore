@@ -1,0 +1,7 @@
+# Executables
+bin/*
+
+# Analysis outputs
+suite/*.ll
+suite/*.s
+suite/*.png
