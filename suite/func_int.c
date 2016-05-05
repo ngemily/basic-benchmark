@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void foo(int n) {
-    printf("foobar %d\n", n);
+int foo() {
+    return 1;
 }
 
 int main(int argc, char *argv[]) {
-    foo(1);
+    printf("%d\n", foo());
     return 0;
 }
