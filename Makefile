@@ -42,7 +42,7 @@ $(BINDIR)/% : $(SRCDIR)/%.c
 %.png : %.ps
 	convert $< $@
 
-test:
+test: $(OBJS)
 	$(foreach obj, $(OBJS), $(obj);)
 
 clean:
