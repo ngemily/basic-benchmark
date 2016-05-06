@@ -5,9 +5,9 @@ override CFLAGS += -target armv7a-linux-gnueabihf \
 		-I/usr/arm-linux-gnueabihf/include/ \
 		-ccc-gcc-name arm-linux-gnueabihf-gcc
 ifeq ($(NO_OPT),1) 
-	CFLAGS += -O0
+	override CFLAGS += -O0
 else
-	CFLAGS += -O3
+	override CFLAGS += -O3
 endif
 
 SRCDIR = suite
