@@ -18,7 +18,8 @@ OBJS    := $(patsubst $(SRCDIR)%, $(BINDIR)%, $(SOURCES:.c=))
 
 all: $(ASM) $(LL) $(OBJS) $(PNG)
 
-%.s : CFLAGS += -S
+%.s : override CC = arm-linux-gnueabi-gcc-4.7
+%.s : CFLAGS += -S -std=c99
 %.s : %.c
 	$(CC) $(CFLAGS) -o $@ $<
 
