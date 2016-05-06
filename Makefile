@@ -1,4 +1,9 @@
 CC = clang
+override CFLAGS += -target armv7a-linux-gnueabihf \
+		-mcpu=cortex-a9 -mfloat-abi=hard \
+		-I/usr/arm-linux-gnueabihf/include/c++/4.7.3/arm-linux-gnueabihf/ \
+		-I/usr/arm-linux-gnueabihf/include/ \
+		-ccc-gcc-name arm-linux-gnueabihf-gcc
 ifeq ($(NO_OPT),1) 
 	CFLAGS += -O0
 else
@@ -21,8 +26,7 @@ all: $(ASM) $(LL) $(OBJS) $(PNG)
 $(BINDIR):
 	mkdir -p $(BINDIR)
 
-%.s : override CC = arm-linux-gnueabi-gcc-4.7
-%.s : CFLAGS += -S -std=c99
+%.s : CFLAGS += -S
 %.s : %.c
 	$(CC) $(CFLAGS) -o $@ $<
 
@@ -36,7 +40,7 @@ $(BINDIR)/% : $(SRCDIR)/%.c | $(BINDIR)
 # opt will print reg.<func>.dot for each function in $<
 # currently only use reg.main.dot
 %.dot : %.ll
-	opt $(CFLAGS) -disable-output -dot-regions $<
+	opt -disable-output -dot-regions $<
 	$(foreach obj, $(wildcard *.dot), echo $(obj);)
 	mv reg.main.dot $@
 
@@ -47,7 +51,8 @@ $(BINDIR)/% : $(SRCDIR)/%.c | $(BINDIR)
 	convert $< $@
 
 test: $(OBJS)
-	$(foreach obj, $(shell find $(BINDIR) -type f), $(obj);)
+	$(foreach obj, $(shell find $(BINDIR) -type f), \
+		qemu-arm -L /usr/arm-linux-gnueabihf $(obj);)
 
 clean:
 	rm -f $(ASM) $(LL) $(OBJS) $(PNG) $(DOT) $(PS)
