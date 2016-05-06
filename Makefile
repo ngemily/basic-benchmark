@@ -8,7 +8,7 @@ endif
 SRCDIR = suite
 BINDIR = bin
 
-SOURCES := $(wildcard suite/*.c)
+SOURCES := $(shell find $(SRCDIR) -type f -name '*.c')
 LL      := $(SOURCES:.c=.ll)
 ASM     := $(SOURCES:.c=.s)
 PNG     := $(SOURCES:.c=.png)
