@@ -47,7 +47,7 @@ $(BINDIR)/% : $(SRCDIR)/%.c | $(BINDIR)
 	convert $< $@
 
 test: $(OBJS)
-	$(foreach obj, $(OBJS), $(obj);)
+	$(foreach obj, $(shell find $(BINDIR) -type f), $(obj);)
 
 clean:
 	rm -f $(ASM) $(LL) $(OBJS) $(PNG) $(DOT) $(PS)
