@@ -18,6 +18,9 @@ OBJS    := $(patsubst $(SRCDIR)%, $(BINDIR)%, $(SOURCES:.c=))
 
 all: $(ASM) $(LL) $(OBJS) $(PNG)
 
+$(BINDIR):
+	mkdir -p $(BINDIR)
+
 %.s : override CC = arm-linux-gnueabi-gcc-4.7
 %.s : CFLAGS += -S -std=c99
 %.s : %.c
@@ -27,8 +30,8 @@ all: $(ASM) $(LL) $(OBJS) $(PNG)
 %.ll : %.c
 	$(CC) $(CFLAGS) -o $@ $<
 
-$(BINDIR)/% : $(SRCDIR)/%.c
-	$(CC) $(CFLAGS) -o $@ $<
+$(BINDIR)/% : $(SRCDIR)/%.c | $(BINDIR)
+	$(CC) $(CFLAGS) -o $(BINDIR)/$(@F) $<
 
 # opt will print reg.<func>.dot for each function in $<
 # currently only use reg.main.dot
