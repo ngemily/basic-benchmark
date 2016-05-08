@@ -2,12 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    volatile int x = 1;
-    volatile int y = 1;
-    volatile int z;
-
-    z = x + y;
-    z = x + 4;
+    asm ("add r2, r1, r0");
 
     return 0;
 }
