@@ -6,8 +6,31 @@ About
 
 This testbench is designed to exercise various aspects of an ISA.
 
-Commands
---------
+Requirements
+------------
+
+- perl with json module
+- clang
+- gcc-4.7-arm-linux-gnueabi 
+- qemu-user-static
+
+Make targets
+------------
+
+| Target  | Description                                           |
+| ------- | ----------------------------------------------------- |
+| `all`   | everything                                            |
+| `objs`  | executables                                           |
+| `test`  | runs all executables                                  |
+| `asm`   | assembly                                              |
+| `ll`    | LLVM IR                                               |
+| `png`   | region graphs (based on LLVM IR)                      |
+| `autoc` | C programs for each assemly snippet in `json/*.json`* |
+
+*NB: `autoc` is run automatically, but currently requires running `make` twice.
+
+LLVM Commands
+-------------
 
 Overview of LLVM commands for compiling executables, emitting intermediate
 representations, and producing graphs.
