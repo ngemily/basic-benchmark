@@ -23,6 +23,14 @@ OBJS    := $(patsubst $(SRCDIR)%, $(BINDIR)%, $(SOURCES:.c=))
 
 all: $(ASM) $(LL) $(OBJS) $(PNG)
 
+asm: $(ASM)
+
+ll: $(LL)
+
+objs: $(OBJS)
+
+png: $(PNG)
+
 $(BINDIR):
 	mkdir -p $(BINDIR)
 
