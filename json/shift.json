@@ -1,0 +1,12 @@
+{
+    "asr" : ["asr r2, r1, r0"],
+    "asrs" : ["asrs r2, r1, r0"],
+    "lsl" : ["lsl r2, r1, r0"],
+    "lsls" : ["lsls r2, r1, r0"],
+    "lsr" : ["lsr r2, r1, r0"],
+    "lsrs" : ["lsrs r2, r1, r0"],
+    "ror" : ["ror r2, r1, r0"],
+    "rors" : ["rors r2, r1, r0"],
+    "rrx" : ["rrx r1, r0"],
+    "rrxs" : ["rrxs r1, r0"]
+}

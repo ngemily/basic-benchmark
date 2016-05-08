@@ -1,0 +1,8 @@
+{
+    "mov" : ["mov r1, r0"],
+    "movs" : ["movs r1, r0"],
+    "mvn" : ["mvn r1, r0"],
+    "mvns" : ["mvns r1, r0"],
+    "movt" : ["movt r1, #65535"],
+    "movw" : ["mov r1, #65535"]
+}

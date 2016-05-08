@@ -1,0 +1,47 @@
+{
+    "sadd8" : ["sadd16 r2, r1, r0"],
+    "qadd8" : ["qadd16 r2, r1, r0"],
+    "shadd8" : ["shadd16 r2, r1, r0"],
+    "uadd8" : ["uadd16 r2, r1, r0"],
+    "uqadd8" : ["uqadd16 r2, r1, r0"],
+    "uhadd8" : ["uhadd16 r2, r1, r0"],
+
+    "ssub8" : ["ssub16 r2, r1, r0"],
+    "qsub8" : ["qsub16 r2, r1, r0"],
+    "shsub8" : ["shsub16 r2, r1, r0"],
+    "usub8" : ["usub16 r2, r1, r0"],
+    "uqsub8" : ["uqsub16 r2, r1, r0"],
+    "uhsub8" : ["uhsub16 r2, r1, r0"],
+
+    "sadd16" : ["sadd16 r2, r1, r0"],
+    "qadd16" : ["qadd16 r2, r1, r0"],
+    "shadd16" : ["shadd16 r2, r1, r0"],
+    "uadd16" : ["uadd16 r2, r1, r0"],
+    "uqadd16" : ["uqadd16 r2, r1, r0"],
+    "uhadd16" : ["uhadd16 r2, r1, r0"],
+
+    "ssub16" : ["ssub16 r2, r1, r0"],
+    "qsub16" : ["qsub16 r2, r1, r0"],
+    "shsub16" : ["shsub16 r2, r1, r0"],
+    "usub16" : ["usub16 r2, r1, r0"],
+    "uqsub16" : ["uqsub16 r2, r1, r0"],
+    "uhsub16" : ["uhsub16 r2, r1, r0"],
+
+    "sasx" : ["sasx r2, r1, r0"],
+    "qasx" : ["qasx r2, r1, r0"],
+    "shasx" : ["shasx r2, r1, r0"],
+    "uasx" : ["uasx r2, r1, r0"],
+    "uqasx" : ["uqasx r2, r1, r0"],
+    "uhasx" : ["uhasx r2, r1, r0"],
+
+    "ssax" : ["ssax r2, r1, r0"],
+    "qsax" : ["qsax r2, r1, r0"],
+    "shsax" : ["shsax r2, r1, r0"],
+    "usax" : ["usax r2, r1, r0"],
+    "uqsax" : ["uqsax r2, r1, r0"],
+    "uhsax" : ["uhsax r2, r1, r0"],
+
+    "usad8" : ["usad8 r2, r1, r0"],
+    "usada8" : ["usada8 r3, r2, r1, r0"]
+}
+

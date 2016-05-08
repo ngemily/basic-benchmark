@@ -1,0 +1,12 @@
+{
+    "tst" : ["tst r1, r0"],
+    "teq" : ["teq r1, r0"],
+    "and" : ["and r1, r0"],
+    "ands" : ["ands r1, r0"],
+    "eor" : ["eor r1, r0"],
+    "eors" : ["eors r1, r0"],
+    "orr" : ["orr r1, r0"],
+    "orrs" : ["orrs r1, r0"],
+    "bic" : ["bic r1, r0"],
+    "bics" : ["bics r1, r0"]
+}

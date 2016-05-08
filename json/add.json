@@ -1,0 +1,8 @@
+{
+    "add" : ["add r2, r1, r0"],
+    "adds" : ["adds r2, r1, r0"],
+    "adc" : ["adc r2, r1, r0"],
+    "adcs" : ["adcs r2, r1, r0"],
+    "qadd" : ["qadd r2, r1, r0"],
+    "qdadd" : ["qdadd r2, r1, r0"]
+}

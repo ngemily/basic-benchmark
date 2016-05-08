@@ -1,6 +1,0 @@
-{
-    "add" : ["add r2, r1, r0"],
-    "adc" : ["adc r2, r1, r0"],
-    "sub" : ["sub r2, r1, r0"],
-    "mul" : ["mul r2, r1, r0"]
-}

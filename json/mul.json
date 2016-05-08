@@ -1,0 +1,39 @@
+{
+    "mul" : ["mul r2, r1, r0"],
+    "muls" : ["muls r2, r1, r0"],
+    "mla" : ["mla r3, r2, r1, r0"],
+    "mlas" : ["mlas r3, r2, r1, r0"],
+    "mls" : ["mls r3, r2, r1, r0"],
+
+    "umull" : ["umull r3, r2, r1, r0"],
+    "umulls" : ["umulls r3, r2, r1, r0"],
+    "umlal" : ["umlal r3, r2, r1, r0"],
+    "umlals" : ["umlals r3, r2, r1, r0"],
+    "umaal" : ["umaal r3, r2, r1, r0"],
+
+    "smull" : ["smull r3, r2, r1, r0"],
+    "smulls" : ["smulls r3, r2, r1, r0"],
+    "smlal" : ["smlal r3, r2, r1, r0"],
+    "smlals" : ["smlals r3, r2, r1, r0"],
+
+    "smuad" : ["smuad r2, r1, r0"],
+    "smuadx" : ["smuadx r2, r1, r0"],
+    "smlad" : ["smlad r3, r2, r1, r0"],
+    "smladx" : ["smladx r3, r2, r1, r0"],
+    "smlald" : ["smlald r3, r2, r1, r0"],
+    "smlaldx" : ["smlaldx r3, r2, r1, r0"],
+
+    "smusd" : ["smusd r2, r1, r0"],
+    "smusdx" : ["smusdx r2, r1, r0"],
+    "smlsd" : ["smlsd r3, r2, r1, r0"],
+    "smlsdx" : ["smlsdx r3, r2, r1, r0"],
+    "smlsld" : ["smlsld r3, r2, r1, r0"],
+    "smlsldx" : ["smlsldx r3, r2, r1, r0"],
+
+    "smmul" : ["smmul r2, r1, r0"],
+    "smmulr" : ["smmulr r2, r1, r0"],
+    "smmla" : ["smmla r3, r2, r1, r0"],
+    "smmlar" : ["smmlar r3, r2, r1, r0"],
+    "smmls" : ["smmls r3, r2, r1, r0"],
+    "smmlsr" : ["smmlsr r3, r2, r1, r0"]
+}

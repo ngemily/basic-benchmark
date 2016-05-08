@@ -1,0 +1,12 @@
+{
+    "sub" : ["sub r2, r1, r0"],
+    "subs" : ["subs r2, r1, r0"],
+    "sbc" : ["sbc r2, r1, r0"],
+    "sbcs" : ["sbcs r2, r1, r0"],
+    "rsb" : ["rsb r2, r1, r0"],
+    "rsbs" : ["rsbs r2, r1, r0"],
+    "rsc" : ["rsc r2, r1, r0"],
+    "rscs" : ["rscs r2, r1, r0"],
+    "qsub" : ["qsub r2, r1, r0"],
+    "qdsub" : ["qdsub r2, r1, r0"]
+}

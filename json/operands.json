@@ -1,0 +1,12 @@
+{
+    "add_imm8" : ["add r2, r1, #1"],
+    "add_lsl_imm" : ["add r2, r1, LSL #1"],
+    "add_lsl_rs" : ["add r2, r1, LSL r0"],
+    "add_lsr_imm" : ["add r2, r1, LSR #1"],
+    "add_lsr_rs" : ["add r2, r1, LSR r0"],
+    "add_asr_imm" : ["add r2, r1, ASR #1"],
+    "add_asr_rs" : ["add r2, r1, ASR r0"],
+    "add_ror_imm" : ["add r2, r1, ROR #1"],
+    "add_ror_rs" : ["add r2, r1, ROR r0"],
+    "add_rrx" : ["add r2, r1, RRX"]
+}

@@ -1,0 +1,11 @@
+{
+    "ssat" : ["ssat r1, #1, r0"],
+    "ssat_asr" : ["ssat r1, #1, r0, ASR #1"],
+    "ssat_lsl" : ["ssat r1, #1, r0, LSL #1"],
+    "ssat16" : ["ssat16 r1, #1, r0"],
+
+    "usat" : ["usat r1, #1, r0"],
+    "usat_asr" : ["usat r1, #1, r0, ASR #1"],
+    "usat_lsl" : ["usat r1, #1, r0, LSL #1"],
+    "usat16" : ["usat16 r1, #1, r0"]
+}
