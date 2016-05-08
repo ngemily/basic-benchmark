@@ -5,3 +5,6 @@ bin/*
 suite/*/*.ll
 suite/*/*.s
 suite/*/*.png
+
+# Auto-gen c sources
+suite/auto/*.c

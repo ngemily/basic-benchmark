@@ -13,6 +13,11 @@ endif
 SRCDIR = suite
 BINDIR = bin
 
+AUTOC_SCRIPT  = scripts/autoc.pl
+AUTOC_DIR     = suite/auto
+JSONDIR       = json
+JSON         := $(shell find $(JSONDIR) -type f -name '*.json')
+
 SOURCES := $(shell find $(SRCDIR) -type f -name '*.c')
 LL      := $(SOURCES:.c=.ll)
 ASM     := $(SOURCES:.c=.s)
@@ -21,18 +26,22 @@ DOT     := $(SOURCES:.c=.dot)
 PS      := $(SOURCES:.c=.ps)
 OBJS    := $(patsubst $(SRCDIR)%, $(BINDIR)%, $(SOURCES:.c=))
 
-all: $(ASM) $(LL) $(OBJS) $(PNG)
+all: autoc $(ASM) $(LL) $(OBJS) $(PNG)
 
-asm: $(ASM)
+asm: autoc $(ASM)
 
-ll: $(LL)
+ll: autoc $(LL)
 
-objs: $(OBJS)
+objs: autoc $(OBJS)
 
 png: $(PNG)
 
-$(BINDIR):
-	mkdir -p $(BINDIR)
+$(BINDIR) $(AUTOC_DIR):
+	mkdir -p $@
+
+# This targt builds c files from assembly, specified in json.
+autoc: $(JSON) | $(AUTOC_DIR)
+	$(foreach obj, $(JSON), $(AUTOC_SCRIPT) $(obj) $(AUTOC_DIR);)
 
 %.s : CFLAGS += -S
 %.s : %.c
@@ -64,3 +73,4 @@ test: $(OBJS)
 
 clean:
 	rm -f $(ASM) $(LL) $(OBJS) $(PNG) $(DOT) $(PS)
+	rm -rf $(BINDIR) $(AUTOC_DIR)
