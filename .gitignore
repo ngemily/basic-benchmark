@@ -8,3 +8,6 @@ suite/*/*.png
 
 # Auto-gen c sources
 suite/auto/*.c
+
+# Makefile empty target files
+autoc

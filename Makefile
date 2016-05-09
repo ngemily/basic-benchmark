@@ -41,7 +41,8 @@ $(BINDIR) $(AUTOC_DIR):
 
 # This targt builds c files from assembly, specified in json.
 autoc: $(JSON) | $(AUTOC_DIR)
-	$(foreach obj, $(JSON), $(AUTOC_SCRIPT) $(obj) $(AUTOC_DIR);)
+	$(foreach obj, $?, $(AUTOC_SCRIPT) $(obj) $(AUTOC_DIR);)
+	touch autoc
 
 %.s : CFLAGS += -S
 %.s : %.c
@@ -74,3 +75,4 @@ test: $(OBJS)
 clean:
 	rm -f $(ASM) $(LL) $(OBJS) $(PNG) $(DOT) $(PS)
 	rm -rf $(BINDIR) $(AUTOC_DIR)
+	rm -f autoc
