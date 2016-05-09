@@ -25,6 +25,7 @@ PNG     := $(SOURCES:.c=.png)
 DOT     := $(SOURCES:.c=.dot)
 PS      := $(SOURCES:.c=.ps)
 OBJS    := $(patsubst $(SRCDIR)%, $(BINDIR)%, $(SOURCES:.c=))
+OBJDIRS := $(patsubst $(SRCDIR)%, $(BINDIR)%, $(shell find $(SRCDIR) -type d))
 
 all: autoc $(ASM) $(LL) $(OBJS) $(PNG)
 
@@ -36,7 +37,7 @@ objs: autoc $(OBJS)
 
 png: $(PNG)
 
-$(BINDIR) $(AUTOC_DIR):
+$(AUTOC_DIR) $(OBJDIRS):
 	mkdir -p $@
 
 # This targt builds c files from assembly, specified in json.
@@ -52,8 +53,8 @@ autoc: $(JSON) | $(AUTOC_DIR)
 %.ll : %.c
 	$(CC) $(CFLAGS) -o $@ $<
 
-$(BINDIR)/% : $(SRCDIR)/%.c | $(BINDIR)
-	$(CC) $(CFLAGS) -o $(BINDIR)/$(@F) $<
+$(BINDIR)/% : $(SRCDIR)/%.c | $(OBJDIRS)
+	$(CC) $(CFLAGS) -o $@ $<
 
 # opt will print reg.<func>.dot for each function in $<
 # currently only use reg.main.dot
@@ -69,7 +70,8 @@ $(BINDIR)/% : $(SRCDIR)/%.c | $(BINDIR)
 	convert $< $@
 
 test: $(OBJS)
-	$(foreach obj, $(shell find $(BINDIR) -type f), \
+	@$(foreach obj, $(shell find $(BINDIR) -type f), \
+		echo $(obj); \
 		qemu-arm -L /usr/arm-linux-gnueabihf $(obj);)
 
 clean:
