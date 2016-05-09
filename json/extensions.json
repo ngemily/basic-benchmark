@@ -1,0 +1,46 @@
+{
+    "bfc" : ["bfc r0, #8, #12"],
+    "bfi" : ["bfi r1, r0, #8, #12"],
+    "sbfx" : ["sbfx r1, r0, #8, #12"],
+    "ubfx" : ["ubfx r1, r0, #8, #12"],
+
+    "pkhbt" : ["pkhbt r2, r1, r0"],
+    "pkhbt_sh" : ["pkhbt r2, r1, r0, LSL #1"],
+    "pkhtb" : ["pkhtb r2, r1, r0"],
+    "pkhtb_sh" : ["pkhtb r2, r1, r0, ASR #1"],
+
+    "sxth" : ["sxth r1, r0"],
+    "sxth_sh" : ["sxth r1, r0, ROR #8"],
+    "sxtb16" : ["sxtb16 r1, r0"],
+    "sxtb16_sh" : ["sxtb16 r1, r0, ROR #8"],
+    "sxtb" : ["sxtb r1, r0"],
+    "sxtb_sh" : ["sxtb r1, r0, ROR #8"],
+
+    "uxth" : ["uxth r1, r0"],
+    "uxth_sh" : ["uxth r1, r0, ROR #8"],
+    "uxtb16" : ["uxtb16 r1, r0"],
+    "uxtb16_sh" : ["uxtb16 r1, r0, ROR #8"],
+    "uxtb" : ["uxtb r1, r0"],
+    "uxtb_sh" : ["uxtb r1, r0, ROR #8"],
+
+    "sxtah" : ["sxtah r2, r1, r0"],
+    "sxtah_sh" : ["sxtah r2, r1, r0, ROR #8"],
+    "sxtab16" : ["sxtab16 r2, r1, r0"],
+    "sxtab16_sh" : ["sxtab16 r2, r1, r0, ROR #8"],
+    "sxtab" : ["sxtab r2, r1, r0"],
+    "sxtab_sh" : ["sxtab r2, r1, r0, ROR #8"],
+
+    "uxtah" : ["uxtah r2, r1, r0"],
+    "uxtah_sh" : ["uxtah r2, r1, r0, ROR #8"],
+    "uxtab16" : ["uxtab16 r2, r1, r0"],
+    "uxtab16_sh" : ["uxtab16 r2, r1, r0, ROR #8"],
+    "uxtab" : ["uxtab r2, r1, r0"],
+    "uxtab_sh" : ["uxtab r2, r1, r0, ROR #8"],
+
+    "rbit" : ["rbit r1, r0"],
+    "rev" : ["rev r1, r0"],
+    "rev16" : ["rev16 r1, r0"],
+    "revsh" : ["revsh r1, r0"],
+
+    "sel" : ["sel r2, r1, r0"]
+}

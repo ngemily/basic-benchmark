@@ -1,0 +1,6 @@
+{
+    "swp" : ["swp r0, r1, [r2]"],
+    "swpb" : ["swpb r0, r1, [r2]"],
+
+    "nop" : ["nop"]
+}
