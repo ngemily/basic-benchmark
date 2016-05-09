@@ -1,0 +1,35 @@
+{
+    "ldr" : ["ldr r0, [r1]"],
+    "ldr_update" : ["ldr r0, [r1]!"],
+    "ldrt" : ["ldrt r0, [r1]"],
+
+    "ldr_imm" : ["ldr r0, [r1, #1]"],
+    "ldr_imm_post" : ["ldr r0, [r1], #1"],
+    "ldr_reg" : ["ldr r2, [r1, -r0]"],
+    "ldr_reg_sh" : ["ldr r2, [r1, -r0, LSL #1]"],
+    "ldr_reg_post" : ["ldr r2, [r1], -r0"],
+    "ldr_reg_post_sh" : ["ldr r2, [r1], -r0, ROR #1"],
+
+    "str_imm" : ["str r0, [r1, #1]"],
+    "str_imm_post" : ["str r0, [r1], #1"],
+    "str_reg" : ["str r2, [r1, -r0]"],
+    "str_reg_sh" : ["str r2, [r1, -r0, LSL #1]"],
+    "str_reg_post" : ["str r2, [r1], -r0"],
+    "str_reg_post_sh" : ["str r2, [r1], -r0, ROR #1"],
+
+    "strb" : ["strb r0, [r1]"],
+    "strh" : ["strh r0, [r1]"],
+    "ldrb" : ["ldrb r0, [r1]"],
+    "ldrsb" : ["ldrsb r0, [r1]"],
+    "ldrh" : ["ldrh r0, [r1]"],
+    "ldrsh" : ["ldrsh r0, [r1]"],
+
+    "ldr_lbl" : ["ldr r0, main"],
+
+    "ldrd" : ["ldrd r2, r3, [r1]"],
+    "ldrd_imm" : ["ldrd r2, r3, [r1, #1]!"],
+    "ldrd_imm_post" : ["ldrd r2, r3, [r1], #1"],
+    "ldrd_reg" : ["ldrd r2, r3, [r1, -r0]"],
+    "ldrd_reg_post" : ["ldrd r2, r3, [r1], -r0"],
+    "ldrd_lbl" : ["ldrd r2, r3, main"]
+}

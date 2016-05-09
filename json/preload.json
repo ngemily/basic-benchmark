@@ -1,0 +1,13 @@
+{
+    "pld" : ["pld [r1]"],
+    "pld_imm" : ["pld [r1, #1]"],
+    "pld_reg" : ["pld [r1, -r0]"],
+    "pld_reg_sh" : ["pld [r1, -r0, RRX]"],
+    "pld_lbl" : ["pld main"],
+
+    "pli" : ["pli [r1]"],
+    "pli_imm" : ["pli [r1, #1]"],
+    "pli_reg" : ["pli [r1, -r0]"],
+    "pli_reg_sh" : ["pli [r1, -r0, RRX]"],
+    "pli_lbl" : ["pli main"]
+}

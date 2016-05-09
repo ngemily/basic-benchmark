@@ -1,0 +1,28 @@
+{
+    "ldm" : ["ldm r1, {r2, r3, r4}"],
+    "ldmia" : ["ldmia r1!, {r2, r3, r4}"],
+    "ldmib" : ["ldmib r1!, {r2, r3, r4}"],
+    "ldmda" : ["ldmda r1!, {r2, r3, r4}"],
+    "ldmdb" : ["ldmdb r1!, {r2, r3, r4}"],
+
+    "stm" : ["stm r1, {r2, r3, r4}"],
+    "stmia" : ["stmia r1!, {r2, r3, r4}"],
+    "stmib" : ["stmib r1!, {r2, r3, r4}"],
+    "stmda" : ["stmda r1!, {r2, r3, r4}"],
+    "stmdb" : ["stmdb r1!, {r2, r3, r4}"],
+
+    "pop" : ["pop {r2, r3, r4}"],
+    "push" : ["push {r2, r3, r4}"],
+
+    "ldrex" : ["ldrex r0, [r1]"],
+    "ldrexh" : ["ldrexh r0, [r1]"],
+    "ldrexb" : ["ldrexb r0, [r1]"],
+    "ldrexd" : ["ldrexd r0, r1, [r1]"],
+
+    "strex" : ["strex r2, r0, [r1]"],
+    "strexh" : ["strexh r2, r0, [r1]"],
+    "strexb" : ["strexb r2, r0, [r1]"],
+    "strexd" : ["strexd r2, r0, r1, [r1]"],
+
+    "clrex" : ["clrex"]
+}
