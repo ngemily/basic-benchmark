@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void foo(int x, int y, int z, int u, int v, int w, int a, int b, int c) {
+void __attribute__ ((noinline)) foo(int x, int y, int z, int u, int v, int w, int a, int b, int c) {
     int sum = x + y + z + u + v + w + a + b + c;
     printf ("sum %d\n", sum);
 }

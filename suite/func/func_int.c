@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int foo() {
-    return 1;
+volatile int x = 1;
+
+int __attribute__ ((noinline)) foo() {
+    return x;
 }
 
 int main(int argc, char *argv[]) {
-    printf("%d\n", foo());
+    volatile int x = foo();
+    printf("%d\n", x);
     return 0;
 }

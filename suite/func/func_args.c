@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void foo(int n) {
+void __attribute__ ((noinline)) foo(int n) {
     printf("%d\n", n);
 }
 

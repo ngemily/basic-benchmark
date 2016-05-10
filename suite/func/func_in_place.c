@@ -3,7 +3,7 @@
 
 int a = 8;
 
-void __attribute__ ((noinline))foo(int *p) {
+void __attribute__ ((noinline)) foo(int *p) {
     *p = 8;
 }
 
