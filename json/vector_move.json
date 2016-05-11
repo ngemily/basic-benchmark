@@ -1,0 +1,16 @@
+{
+    "vmov32" : ["vmov.f32 d1, d0"],
+    "vmov64" : ["vmov.f64 d1, d0"],
+
+    "vmovsr" : ["vmov s0, r0"],
+    "vmovrs" : ["vmov r0, s0"],
+
+    "vmovssrr" : ["vmov s1, s0, r1, r0"],
+    "vmovrrss" : ["vmov r1, r0, s1, s0"],
+
+    "vmovdrr" : ["vmov d0, r1, r0"],
+    "vmovrrd" : ["vmov r1, r0, d0"],
+
+    "vmrs_fpscr" : ["vmrs r0, fpscr"],
+    "vmrs_flags" : ["vmrs APSR_nzcv, fpscr"]
+}

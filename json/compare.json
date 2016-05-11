@@ -1,4 +1,5 @@
 {
+    "clz" : ["clz r1, r0"],
     "cmp" : ["cmp r1, r0"],
     "cmn" : ["cmn r1, r0"]
 }

@@ -1,0 +1,44 @@
+{
+    "vcvt_fd" : ["vcvt.f64.f32 d0, s0"],
+    "vcvt_df" : ["vcvt.f32.f64 s0, d0"],
+
+    "vcvt_uf" : ["vcvt.f32.u32 s1, s0"],
+    "vcvt_ud" : ["vcvt.f64.u32 d0, s0"],
+    "vcvt_sf" : ["vcvt.f32.s32 s0, s1"],
+    "vcvt_sd" : ["vcvt.f64.s32 d0, s0"],
+
+    "vcvt_fu" : ["vcvt.u32.f32 s0, s1"],
+    "vcvt_du" : ["vcvt.u32.f64 s0, d0"],
+    "vcvt_fs" : ["vcvt.s32.f32 s1, s0"],
+    "vcvt_ds" : ["vcvt.s32.f64 s0, d0"],
+
+    "vcvtr_fu" : ["vcvtr.u32.f32 s0, s1"],
+    "vcvtr_du" : ["vcvtr.u32.f64 s0, d0"],
+    "vcvtr_fs" : ["vcvtr.s32.f32 s1, s0"],
+    "vcvtr_ds" : ["vcvtr.s32.f64 s0, d0"],
+
+    "vcvt_f32u32" : ["vcvt.f32.u32 s0, s0, #1"],
+    "vcvt_f32u16" : ["vcvt.f32.u16 s0, s0, #1"],
+    "vcvt_f32s32" : ["vcvt.f32.s32 s0, s0, #1"],
+    "vcvt_f32s16" : ["vcvt.f32.s16 s0, s0, #1"],
+
+    "vcvt_f64u32" : ["vcvt.f64.u32 d0, d0, #1"],
+    "vcvt_f64u16" : ["vcvt.f64.u16 d0, d0, #1"],
+    "vcvt_f64s32" : ["vcvt.f64.s32 d0, d0, #1"],
+    "vcvt_f64s16" : ["vcvt.f64.s16 d0, d0, #1"],
+
+    "vcvt_u32f32" : ["vcvt.u32.f32 s0, s0, #1"],
+    "vcvt_u16f32" : ["vcvt.u16.f32 s0, s0, #1"],
+    "vcvt_s32f32" : ["vcvt.s32.f32 s0, s0, #1"],
+    "vcvt_s16f32" : ["vcvt.s16.f32 s0, s0, #1"],
+
+    "vcvt_u32f64" : ["vcvt.u32.f64 d0, d0, #1"],
+    "vcvt_u16f64" : ["vcvt.u16.f64 d0, d0, #1"],
+    "vcvt_s32f64" : ["vcvt.s32.f64 d0, d0, #1"],
+    "vcvt_s16f64" : ["vcvt.s16.f64 d0, d0, #1"],
+
+    "vcvtt_sh" : ["vcvtt.f16.f32 s1, s0"],
+    "vcvtt_sh" : ["vcvtb.f16.f32 s1, s0"],
+    "vcvtt_hs" : ["vcvtt.f32.f16 s1, s0"],
+    "vcvtt_hs" : ["vcvtb.f32.f16 s1, s0"]
+}

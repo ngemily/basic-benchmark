@@ -1,0 +1,27 @@
+{
+    "vmul32" : ["vmul.f32 s2, s1, s0"],
+    "vnmul32" : ["vnmul.f32 s2, s1, s0"],
+    "vmla32" : ["vmla.f32 s2, s1, s0"],
+    "vmls32" : ["vmls.f32 s2, s1, s0"],
+    "vnmls32" : ["vnmls.f32 s2, s1, s0"],
+    "vnmla32" : ["vnmla.f32 s2, s1, s0"],
+    "vadd32" : ["vadd.f32 s2, s1, s0"],
+    "vsub32" : ["vsub.f32 s2, s1, s0"],
+    "vdiv32" : ["vdiv.f32 s2, s1, s0"],
+    "vabs32" : ["vabs.f32 s1, s0"],
+    "vneg32" : ["vneg.f32 s1, s0"],
+    "vsqrt32" : ["vsqrt.f32 s1, s0"],
+
+    "vmul64" : ["vmul.f64 d2, d1, d0"],
+    "vnmul64" : ["vnmul.f64 d2, d1, d0"],
+    "vmla64" : ["vmla.f64 d2, d1, d0"],
+    "vmls64" : ["vmls.f64 d2, d1, d0"],
+    "vnmls64" : ["vnmls.f64 d2, d1, d0"],
+    "vnmla64" : ["vnmla.f64 d2, d1, d0"],
+    "vadd64" : ["vadd.f64 d2, d1, d0"],
+    "vsub64" : ["vsub.f64 d2, d1, d0"],
+    "vdiv64" : ["vdiv.f64 d2, d1, d0"],
+    "vabs64" : ["vabs.f64 d1, d0"],
+    "vneg64" : ["vneg.f64 d1, d0"],
+    "vsqrt64" : ["vsqrt.f64 d1, d0"]
+}

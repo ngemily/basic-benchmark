@@ -1,0 +1,19 @@
+{
+    "eq" : ["addeq r2, r1, r0"],
+    "ne" : ["addne r2, r1, r0"],
+    "cs" : ["addcs r2, r1, r0"],
+    "hs" : ["addhs r2, r1, r0"],
+    "cc" : ["addcc r2, r1, r0"],
+    "lo" : ["addlo r2, r1, r0"],
+    "mi" : ["addmi r2, r1, r0"],
+    "pl" : ["addpl r2, r1, r0"],
+    "vs" : ["addvs r2, r1, r0"],
+    "vc" : ["addvc r2, r1, r0"],
+    "hi" : ["addhi r2, r1, r0"],
+    "ls" : ["addls r2, r1, r0"],
+    "ge" : ["addge r2, r1, r0"],
+    "lt" : ["addlt r2, r1, r0"],
+    "gt" : ["addgt r2, r1, r0"],
+    "le" : ["addle r2, r1, r0"],
+    "al" : ["addal r2, r1, r0"]
+}
