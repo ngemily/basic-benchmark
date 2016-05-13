@@ -60,7 +60,7 @@ $(BINDIR)/% : $(SRCDIR)/%.c | $(OBJDIRS)
 # currently only use reg.main.dot
 %.dot : %.ll
 	opt -disable-output -dot-regions $<
-	$(foreach obj, $(wildcard *.dot), echo $(obj);)
+	$(foreach obj, $(wildcard *.dot), rm $(obj);)
 	mv reg.main.dot $@
 
 %.ps : %.dot
