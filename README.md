@@ -9,10 +9,10 @@ This testbench is designed to exercise various aspects of an ISA.
 Requirements
 ------------
 
-- perl with json module
 - clang
-- gcc-4.7-arm-linux-gnueabi 
-- qemu-user-static
+- perl, libjson-perl
+- gcc-4.7-arm-linux-gnueabihf
+- qeum-user, qemu-user-static
 
 Make targets
 ------------
