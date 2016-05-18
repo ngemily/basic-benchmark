@@ -4,7 +4,11 @@ A Simple Testbench Suite
 About
 -----
 
-This testbench is designed to exercise various aspects of an ISA.
+This testbench is designed to exercise various aspects of the ARM ISA.  Single
+instruction tests can be found in `json`, as a collection of instructions that
+will be automatically generated into C programs.  More elaborate tests,
+exercising the use of loops, functions, and pointers, written in C, can be found
+in `suite`.
 
 Requirements
 ------------
